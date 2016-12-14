@@ -7,6 +7,8 @@ var file_name = '';
 var db = {};
 var previous_song = '';
 
+app.use(express.static('public'));
+
 app.get('/', function (req, res) {
     res.send('Hello World!');
 });
@@ -19,7 +21,7 @@ app.get('/start_random', function (req, res) {
 
     random_songs.map(function (elem) {
         if (undefined != elem.current) {
-            startSong(elem.file, song)
+            song = startSong(elem.file, song)
         }
     });
 
@@ -71,17 +73,18 @@ function startSong(mp3_name, song) {
         log('no song to kill');
     }
 
-    var spawned_song = spawn(
-        'top',
-        ['-U', 'zmey'],
-        {cwd: '/Users'}
-    );
-
-    //song = spawn(
-    //    'python',
-    //    ['py/synchronized_lights.py', '--file=/home/pi/lightshowpi/music/sample/' + song],
-    //    { cwd:  '/home/pi/lightshowpi'}
+    // ========================= DO TESTU
+    //var spawned_song = spawn(
+    //    'top',
+    //    ['-U', 'zmey'],
+    //    {cwd: '/Users'}
     //);
+
+    song = spawn(
+        'python',
+        ['py/synchronized_lights.py', '--file=/home/pi/lightshowpi/music/sample/' + song],
+        { cwd:  '/home/pi/lightshowpi'}
+    );
 
     log('started ' + file_name + ' - pid: ' + spawned_song.pid);
 
@@ -98,7 +101,7 @@ function getRandomSongs() {
         db_songs = JSON.parse(JSON.stringify(db.songs));
 
 log([db_songs.length]);
-    db_songs = db_songs.filter(function (elem) { log(previous_song); return elem.file != previous_song; });
+    db_songs = db_songs.filter(function (elem) { return elem.file != previous_song; });
 log([db_songs.length]);
 
     // collect songs
@@ -127,7 +130,7 @@ log([db_songs.length]);
 }
 
 function log(msg) {
-    console.log(new Date().toUTCString() + ' | ' + msg);
+    console.log([new Date().toUTCString(), msg]);
 }
 
 db = {
@@ -195,10 +198,6 @@ db = {
         {
             "title": "Home For The Holidays",
             "file": "home_for_the_holidays.mp3"
-        },
-        {
-            "title": "Santa Claus Is Coming To Town",
-            "file": "santa_claus_is_coming_to_town.mp3"
         },
         {
             "title": "Do They Know It's Christmas",

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===========================
+    THEME INFO
+    =========================== -->
+    <meta name="description"
+          content="SantaGo is another free Bootstrap HTML Christmas sales and affiliate page template built and distributed by EvenFly Team as a small Cristmas gift under Creative Commons 3.0 license.">
+    <meta name="keywords"
+          content="Christmas Template, Free Christmas Landing Page, Christmas Affiliate Landing Page, Free Christmas Sales Page Template">
+    <meta name="author" content="Mamun Srizon">
+
+    <!-- ===========================
+    SITE TITLE
+    =========================== -->
+    <title>Ho ho ho! Christmas song guest!</title>
+
+    <!-- ===========================
+    FAVICONS
+    =========================== -->
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-ipad-retina.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-iphone-retina.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-ipad.png"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-iphone.png"/>
+
+    <!-- ===========================
+    STYLESHEETS
+    =========================== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- ===========================
+    FONTS
+    =========================== -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,900,600|Pacifico' rel='stylesheet' type='text/css'>
+
+    <!-- ===========================
+    GOOGLE ANALYTICS (Optional)
+    =========================== -->
+
+    <!-- #NOTE: Replace this line with your analytics code -->
+
+    <!--ANALYTICS END-->
+
+    <!--[if IE]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!-- ===========================
+HERO SECTION
+=========================== -->
+<div id="hero">
+    <div class="redoverlay">
+        <div class="container">
+            <div class="row">
+                <div class="herotext">
+                    <h2 class="wow zoomInDown" data-wow-duration="3s">Guess what a Christmas song!</h2>
+                    <h1 class="wow flipInY">Ho ho ho ho!</h1>
+
+                    <a class="btn btn-reverse wow zoomIn" href="#game">
+                        <h3>Play the game!</h3>
+                    </a><!--#NOTE: texts inside the OPTIONAL tag above would be hidden on smaller mobile screens -->
+
+                    <p class="wow fadeInUp" data-wow-duration="2s">Powered by CRM & Webinars</p>
+
+                    <img class="bigbell wow tada infinite" data-wow-duration="30s" src="img/bell.png" alt="">
+                </div>
+
+                <div class="santa wow bounceInDown" data-wow-duration="2s">
+                    <img src="img/santa.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--HERO SECTION END-->
+
+<!-- ===========================
+OVERVIEW SECTION
+=========================== -->
+<div id="game" class="container">
+
+    <div id="game_off">
+        <div class="row text-center">
+            <div style="margin: 100px;">&#160;</div>
+            <h2>Are you ready?</h2>
+            <a id="start_game" href="#start" class="btn btn-default glyphicon glyphicon-play"></a>
+            <h6>Press the button to start!</h6>
+        </div>
+    </div>
+
+
+    <div id="game_on" style="display:none;">
+        <div style="margin: 20px;">&#160;</div>
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <h2>What is that song?</h2>
+                <h4>Click the correct answer!</h4>
+            </div>
+            <div class="col-md-6 col-lg-6 text-center">
+                <a id="stop_game" href="#stop" class="btn btn-default glyphicon glyphicon-stop" title="Stop"></a>
+                <a id="try_next" href="#try_next" class="btn btn-default glyphicon glyphicon-step-forward"></a>
+                <h6>You can stop the game or go to next song</h6>
+            </div>
+        </div>
+
+        <div id="my_modal" class="modal fade">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div id="my_modal_body" class="modal-body">
+                        <div id="my_modal_title" class="modal-title">Modal title</div>
+                        <center>
+                            <img class="js_anwer_img js_anwer_img_fail" src="img/fail/1.gif"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_fail" src="img/fail/2.jpg"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_fail" src="img/fail/3.jpg"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_fail" src="img/fail/4.jpg"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_fail" src="img/fail/5.gif"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_fail" src="img/fail/6.jpg"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_fail" src="img/fail/7.jpg"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_fail" src="img/fail/8.jpg"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_fail" src="img/fail/9.jpg"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_fail" src="img/fail/10.gif"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_correct" src="img/correct/1.gif"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_correct" src="img/correct/2.gif"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_correct" src="img/correct/3.gif"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_correct" src="img/correct/4.gif"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_correct" src="img/correct/5.gif"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_correct" src="img/correct/6.gif"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_correct" src="img/correct/7.gif"
+                                 style="width:550px; display: none;"/>
+                            <img class="js_anwer_img js_anwer_img_correct" src="img/correct/8.gif"
+                                 style="width:550px; display: none;"/>
+                        </center>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div id="answers" class="row">
+
+            <div class="col-md-6 col-lg-4">
+                <a href="#1">
+                    <center>
+                        <img src="img/o1.png" alt="">
+                        <h4>Last Christmas</h4>
+                    </center>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="#2">
+                    <center>
+                        <img src="img/o2.png" alt="">
+                        <h4>All I Want For Christmas Is You</h4>
+                    </center>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="#3">
+                    <center>
+                        <img src="img/o3.png" alt="">
+                        <h4>Let it Snow!</h4>
+                    </center>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="#4">
+                    <center>
+                        <img src="img/o4.png" alt="">
+                        <h4>Driving home for christmas</h4>
+                    </center>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="#5">
+                    <center>
+                        <img src="img/o5.png" alt="">
+                        <h4>Jingle bells</h4>
+                    </center>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="#6">
+                    <center>
+                        <img src="img/o6.png" alt="">
+                        <h4>Holy night</h4>
+                    </center>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!---->
+
+    <div style="margin: 50px;">&#160;</div>
+</div><!--OVERVIEW SECTION END-->
+
+<!-- ===========================
+CALL-TO-ACTION SECTION
+=========================== -->
+<div class="calltoaction">
+    <div class="lightoverlay">
+        <div class="container">
+            <div class="col-md-4">
+                <img src="img/tree.gif" alt="">
+            </div><!--CALL-TO-ACTION IMAGE END-->
+
+            <div class="sectionhead content col-md-8">
+                <h2>Thank you for having a good time!</h2>
+                <p>We wishing you peace, joy, and all the best this wonderful holiday has to offer. May this incredible
+                    time of giving and spending time with family bring you joy that lasts throughout the year.</p>
+            </div><!--CALL-TO-ACTION CONTENT END-->
+        </div><!--CALL-TO-ACTION CONTAINER END-->
+    </div><!--CALL-TO-ACTION OVERLAY END-->
+</div><!--CALL-TO-ACTION END-->
+
+
+<!-- ===========================
+FOOTER
+=========================== -->
+<footer class="container text-center">
+    <h2 class="logo">Santa<span class="highlight">Go</span></h2>
+    <img class="santacap" src="img/santa_cap.png" alt="">
+    <P>Another free Bootstrap Landing page temlate from <a href="http://evenfly.com">EvenFly</a> released under <a
+            href="https://creativecommons.org/licenses/by/3.0/">CC 3.0</a> license.</P>
+    <hr>
+</footer><!--FOOTER END-->
+
+<!-- ===========================
+NECESSARY SCRIPTS
+=========================== -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script src="js/xmass.js"></script>
+<script src="js/evenfly.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/snowstorm-min.js"></script>
+<script>new WOW().init();</script>
+</body>
+</html>
