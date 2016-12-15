@@ -73,7 +73,7 @@ function startSong(mp3_name, song) {
         log('no song to kill');
     }
 
-    // ========================= DO TESTU
+    //========================= DO TESTU
     //var spawned_song = spawn(
     //    'top',
     //    ['-U', 'zmey'],
@@ -82,7 +82,7 @@ function startSong(mp3_name, song) {
 
     song = spawn(
         'python',
-        ['py/synchronized_lights.py', '--file=/home/pi/lightshowpi/music/sample/' + song],
+        ['py/synchronized_lights.py', '--file=/home/workspace/xmassguess/mp3s/' + song],
         { cwd:  '/home/pi/lightshowpi'}
     );
 
@@ -140,68 +140,84 @@ db = {
             "file": "last_christmas.mp3"
         },
         {
-            "title": "White Christmas",
-            "file": "white_christmas.mp3"
+            "title": "All I Want For Christmas Is You Metal",
+            "file": "All_I_Want_For_Christmas_Is_You_metal.mp3"
         },
         {
-            "title": "The Chipmunk Song",
-            "file": "the_chipmunk_song.mp3"
+            "title": "All I Want For Christmas Is You Remix",
+            "file": "All_I_Want_For_Christmas_Is_You_rmx.mp3"
         },
         {
-            "title": "Rudolph, The Red Nosed Reindeer",
-            "file": "rudolph,_the_red_nosed_reindeer.mp3"
+            "title": "Bog Sie Rodzi",
+            "file": "Bog_Sie_Rodzi.mp3"
         },
         {
-            "title": "I Saw Mommy Kissing Santa Claus",
-            "file": "i_saw_mommy_kissing_santa_claus.mp3"
+            "title": "Carol Of The Bells Metal",
+            "file": "Carol_of_the_Bells_Metal.mp3"
         },
         {
-            "title": "Jingle Bell Rock",
-            "file": "jingle_bell_rock.mp3"
+            "title": "Carol Of The Bells Remix",
+            "file": "Carol_Of_The_Bells_remix.mp3"
         },
         {
-            "title": "The Christmas Song",
-            "file": "the_christmas_song.mp3"
+            "title": "Gdy Sliczna Panna Metal",
+            "file": "Gdy_Sliczna_Panna_metal.mp3"
         },
         {
-            "title": "Snoopy's Christmas",
-            "file": "snoopy's_christmas.mp3"
+            "title": "Here Comes Santa Claus Trap",
+            "file": "Here_Comes_Santa_Claus_Trap.mp3"
         },
         {
-            "title": "Here Comes Santa Claus",
-            "file": "here_comes_santa_claus.mp3"
+            "title": "Jingle Bell Rock Trap",
+            "file": "Jingle_Bell_Rock_Trap.mp3"
         },
         {
-            "title": "Little Drummer Boy",
-            "file": "little_drummer_boy.mp3"
+            "title": "Jingle Bells Metal",
+            "file": "Jingle_Bells_metal.mp3"
         },
         {
-            "title": "Donde Esta Santa Claus",
-            "file": "donde_esta_santa_claus.mp3"
+            "title": "Jingle Bells Trap",
+            "file": "Jingle_Bells_Trap.mp3"
         },
         {
-            "title": "Rockin' Around The Christmas Tree",
-            "file": "rockin'_around_the_christmas_tree.mp3"
+            "title": "Last Christmas Metal",
+            "file": "Last_Christmas_metal.mp3"
         },
         {
-            "title": "You're All I Want For Christmas",
-            "file": "you're_all_i_want_for_christmas.mp3"
+            "title": "Last Christmas Trap",
+            "file": "Last_Christmas_Trap.mp3"
         },
         {
-            "title": "Baby's First Christmas",
-            "file": "baby's_first_christmas.mp3"
+            "title": "LetIt Snow Metal",
+            "file": "Let_it_Snow_metal.mp3"
         },
         {
-            "title": "Santa Claus Is Coming To Town",
-            "file": "santa_claus_is_coming_to_town.mp3"
+            "title": "Przybiezeli Do Betlejem Metal",
+            "file": "Przybiezeli_Do_Betlejem_metal.mp3"
         },
         {
-            "title": "Home For The Holidays",
-            "file": "home_for_the_holidays.mp3"
+            "title": "Rudolph The Red Nosed Reindeer Remix",
+            "file": "Rudolph_The_Red_Nosed_Reindeer_remix.mp3"
         },
         {
-            "title": "Do They Know It's Christmas",
-            "file": "do_they_know_it's_christmas.mp3"
+            "title": "Santa Claus Is Coming To TownMetal",
+            "file": "Santa_Claus_Is_Coming_To_Town_metal.mp3"
+        },
+        {
+            "title": "Santa Claus Is Coming To TownRemix",
+            "file": "Santa_Claus_Is_Coming_To_Town_remix.mp3"
+        },
+        {
+            "title": "Sleigh Ride Metal",
+            "file": "Sleigh_Ride_metal.mp3"
+        },
+        {
+            "title": "Sleigh RideRemix",
+            "file": "Sleigh_Ride_remix.mp3"
+        },
+        {
+            "title": "Wsrod Nocnej Ciszy Metal",
+            "file": "Wsrod_Nocnej_Ciszy_metal.mp3"
         }
     ]
 };
