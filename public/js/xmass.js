@@ -18,7 +18,6 @@ $(function() {
         $.ajax({
             url: "/start_random",
             success: function( result ) {
-                console.log(result);
                 $("#answers > div h4").map(function (index, elem) {
                     $(elem).html(result[index].title);
                     $(elem)
@@ -32,7 +31,7 @@ $(function() {
 
                                 setTimeout(function() {
                                     var images = $('.js_anwer_img_correct');
-                                    var random_image = $(images[Math.round(Math.random() * images.length)]);
+                                    var random_image = $(images[Math.round(Math.random() * (images.length - 1))]);
                                     random_image.show();
 
                                     $('#my_modal').modal('toggle');
@@ -44,7 +43,7 @@ $(function() {
 
                                 setTimeout(function() {
                                     var images = $('.js_anwer_img_fail');
-                                    var random_image = $(images[Math.round(Math.random() * images.length)]);
+                                    var random_image = $(images[Math.round(Math.random() * (images.length - 1))]);
                                     random_image.show();
 
                                     $('#my_modal').modal('toggle');
